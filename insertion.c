@@ -19,8 +19,9 @@ void insertionsort(int a[ ], int n) {
     for(i=1; i<n; i++)
     {
         item = a[i];
-        for(j=i-1; j>=0 && a[j]>item; j--)
+        for(j=i-1; j>=0 && a[j]>item; j--){
             a[j+1] = a[j];
+        } 
         a[j+1] = item;
     }
 }
